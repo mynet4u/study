@@ -32,34 +32,33 @@ int main(void)
 	NODE *FoundNode1, *FoundNode2;
 
 	Node1 = Push(1, 1);
-	Print();								// ▶  (1, 1);
-	ReversalPrint();					// ▶  (1, 1);
+	Print();			// ▶  (1, 1)
+	ReversalPrint();		// ▶  (1, 1)
 	Node2 = Push(1, 2);
-	Print();								// ▶  (1, 1);, (1, 2);
-	ReversalPrint();					// ▶  (1, 2);, (1, 1);
+	Print();			// ▶  (1, 1), (1, 2)
+	ReversalPrint();		// ▶  (1, 2), (1, 1)
 	Node3 = Push(2, 2);
-	Print();								// ▶  (1, 1);, (1, 2);, (2, 2);
-	ReversalPrint();					// ▶  (2, 2);, (1, 2);, (1, 1);
+	Print();			// ▶  (1, 1);, (1, 2);, (2, 2);
+	ReversalPrint();		// ▶  (2, 2);, (1, 2);, (1, 1);
 	FoundNode2 = Find(1, 2);
 	PrintNode(FoundNode2);		// ▶  (1, 2);
 	FoundNode2->x = 9;
 	FoundNode2->y = 9;
 	FoundNode2 = Find(9, 9);
 	PrintNode(FoundNode2);		// ▶  (9, 9);
-	Print();								// ▶  (1, 1);, (9, 9);, (2, 2);
-	ReversalPrint();					// ▶  (2, 2);, (9, 9);, (1, 1);
+	Print();			// ▶  (1, 1);, (9, 9);, (2, 2);
+	ReversalPrint();		// ▶  (2, 2);, (9, 9);, (1, 1);
 	Node4 = Insert(Node2, 4, 1);
-	Print();								// ▶  (1, 1);, (9, 9);, (4, 1);, (2, 2);
-	ReversalPrint();					// ▶  (2, 2);, (4, 1);, (9, 9);, (1, 1);
-	Remove(Node1);
-	Print();								// ▶  (9, 9);, (4, 1);, (2, 2);
-	ReversalPrint();					// ▶  (2, 2);, (4, 1);, (9, 9);
+	Print();			// ▶  (1, 1);, (9, 9);, (4, 1);, (2, 2);
+	ReversalPrint();		// ▶  (2, 2);, (4, 1);, (9, 9);, (1, 1);
+	Remove(Node1);;			// ▶  (9, 9);, (4, 1);, (2, 2);
+	ReversalPrint();		// ▶  (2, 2);, (4, 1);, (9, 9);
 	Remove(Node3);
-	Print();								// ▶  (9, 9);, (4, 1);
-	ReversalPrint();					// ▶  (4, 1);, (9, 9);
+	Print();			// ▶  (9, 9);, (4, 1);
+	ReversalPrint();		// ▶  (4, 1);, (9, 9);
 	Remove(Node4);
-	Print();								// ▶  (9, 9);
-	ReversalPrint();					// ▶  (9, 9);
+	Print();			// ▶  (9, 9);
+	ReversalPrint();		// ▶  (9, 9);
 	Remove(FoundNode2);
 	Print();
 	ReversalPrint();
