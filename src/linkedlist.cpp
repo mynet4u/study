@@ -51,7 +51,7 @@ int main(void)
 	Node4 = Insert(Node2, 4, 1);
 	Print();			// ▶  (1, 1), (9, 9), (4, 1), (2, 2);
 	ReversalPrint();		// ▶  (2, 2), (4, 1), (9, 9), (1, 1);
-	Remove(Node1);;			// ▶  (9, 9), (4, 1), (2, 2)
+	Remove(Node1);;			
 	ReversalPrint();		// ▶  (2, 2), (4, 1), (9, 9)
 	Remove(Node3);
 	Print();			// ▶  (9, 9), (4, 1)
